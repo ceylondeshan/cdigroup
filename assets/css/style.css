@@ -1,39 +1,49 @@
-/* Core Variables & Reset */
-:root {
-    --primary: #0a192f;
-    --secondary: #172a45;
-    --accent: #f5a623;
-    --text-light: #f8f9fa;
-    --text-dark: #333333;
-    --gray: #666666;
-}
-
+/* ==========================================================================
+   1. Basic CSS Reset & Core Settings
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #0d233a;   /* Corporate Deep Blue */
+    --accent-color: #e65c00;    /* Professional Orange/Gold */
+    --text-dark: #222222;
+    --text-light: #f4f6f9;
+    --bg-light: #f9fbfd;
 }
 
 body {
-    background-color: #f4f6f9;
+    background-color: #ffffff;
     color: var(--text-dark);
+    line-height: 1.7;
+    padding-top: 80px; /* Header එකට යටින් ඉඩ තැබීමට */
 }
 
 .container {
-    width: 85%;
+    width: 88%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
-/* Header & Navbar */
+/* ==========================================================================
+   2. Header & Navigation Styling
+   ========================================================================== */
 header {
-    background-color: var(--primary);
-    padding: 20px 0;
-    position: sticky;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    transition: all 0.3s ease;
 }
 
 header .container {
@@ -43,12 +53,14 @@ header .container {
 }
 
 .logo h2 {
-    color: var(--text-light);
+    font-size: 24px;
+    color: var(--primary-color);
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .logo h2 span {
-    color: var(--accent);
+    color: var(--accent-color);
 }
 
 nav ul {
@@ -61,106 +73,176 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #cbd5e1;
     text-decoration: none;
-    font-size: 15px;
-    transition: color 0.3s;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s ease;
+    text-transform: uppercase;
 }
 
-nav ul li a:hover, nav ul li a.active {
-    color: var(--accent);
+nav ul li a:hover, 
+nav ul li a.active {
+    color: var(--accent-color);
 }
 
-/* Language Switcher */
+/* ==========================================================================
+   3. Language Switcher Settings
+   ========================================================================== */
+.lang-switcher {
+    display: flex;
+    gap: 5px;
+}
+
 .lang-switcher button {
     background: transparent;
-    border: 1px solid var(--accent);
-    color: var(--text-light);
-    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px 12px;
     cursor: pointer;
-    font-size: 12px;
+    font-weight: 600;
     border-radius: 4px;
-    transition: all 0.3s;
+    font-size: 13px;
+    transition: all 0.3s ease;
 }
 
-.lang-switcher button.active, .lang-switcher button:hover {
-    background-color: var(--accent);
-    color: var(--primary);
+/* භාෂාව ඇක්ටිව් වූ විට වෙනස් වන පාට */
+.lang-switcher button.active {
+    background: var(--accent-color) !important;
+    color: #ffffff !important;
+    border-color: var(--accent-color) !important;
 }
 
-/* Hero Section */
+.lang-switcher button:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   4. Hero Section Styling
+   ========================================================================== */
 .hero {
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(23, 42, 69, 0.8)), url('../images/hero-bg.jpg') no-repeat center center/cover;
-    height: 70vh;
+    height: 85vh;
+    background: linear-gradient(rgba(13, 35, 58, 0.85), rgba(13, 35, 58, 0.85)), 
+                url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--text-light);
+    color: #ffffff;
     padding: 0 20px;
 }
 
 .hero-content h1 {
     font-size: 48px;
+    font-weight: 700;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .hero-content p {
     font-size: 18px;
-    margin-bottom: 30px;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #cbd5e1;
+    margin: 0 auto 30px auto;
+    font-weight: 300;
+    opacity: 0.9;
 }
 
+/* Buttons */
 .btn {
-    background-color: var(--accent);
-    color: var(--primary);
-    padding: 12px 30px;
+    display: inline-block;
+    padding: 12px 35px;
+    background: var(--accent-color);
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(230, 92, 0, 0.3);
 }
 
 .btn:hover {
-    background-color: #e0961b;
+    background: #cc5200;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 92, 0, 0.5);
 }
 
-/* Overview Section */
+/* ==========================================================================
+   5. Overview / About Section Styling
+   ========================================================================== */
 .overview {
-    padding: 60px 0;
+    padding: 100px 0;
     text-align: center;
+    background-color: var(--bg-light);
 }
 
 .section-title h2 {
     font-size: 32px;
-    color: var(--primary);
-    margin-bottom: 10px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
-.section-title .line {
+.line {
     width: 60px;
-    height: 4px;
-    background-color: var(--accent);
+    height: 3px;
+    background: var(--accent-color);
     margin: 0 auto 30px auto;
+    border-radius: 2px;
 }
 
-.overview p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: var(--gray);
-    max-width: 800px;
-    margin: 0 auto;
+#about-desc {
+    font-size: 17px;
+    max-width: 850px;
+    margin: auto;
+    color: #555555;
+    line-height: 1.8;
 }
 
-/* Footer */
+/* ==========================================================================
+   6. Footer Styling
+   ========================================================================== */
 footer {
-    background-color: var(--primary);
-    color: #cbd5e1;
+    background: var(--primary-color);
+    color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 30px 0;
     font-size: 14px;
+    border-top: 4px solid var(--accent-color);
+}
+
+/* ==========================================================================
+   7. Responsive Design (Mobile Layout)
+   ========================================================================== */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        margin-top: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+    
+    .overview {
+        padding: 60px 0;
+    }
 }

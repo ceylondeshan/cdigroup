@@ -1,14 +1,13 @@
+// Ceylon Direxa International - Premium Bilingual Translation Data
 const translations = {
     en: {
+        // Navigation & General Buttons
         "nav-join": "JOIN OUR TEAM",
-        "hero-title": "Building Careers.<br>Expanding Horizons.",
-        "hero-desc": "The Fastest Growing Management Training Hub in Sri Lanka",
+        "btn-apply-text": "Apply for Careers",
         "hero-btn": "GET OFFICIAL APP",
-        "stat-1": "20+", "stat-1-p": "Years Excellence",
-        "stat-2": "50+", "stat-2-p": "Vision 2030 Branches",
-        "stat-3": "100%", "stat-3-p": "Registration Free",
+        "ach-btn": "VIEW EVENT GALLERY",
         
-        // Corporate Presence Strings
+        // Corporate Presence Section
         "corp-title": "Our Corporate Presence",
         "corp-h1": "Registered Head Office",
         "corp-p1": "Operating dynamically from Anuradhapura, leading strategic multi-sector corporate development projects nationwide.",
@@ -17,110 +16,148 @@ const translations = {
         "corp-h3": "Branch Network",
         "corp-p3": "Expanding rapidly with a clear blueprint to establish 50+ fully functional administrative centers under Vision 2030.",
 
+        // Vision & Mission
         "vision-title": "Our Vision",
-        "vision-text": '"To be the premier catalyst in transforming Sri Lankan youth into global professional leaders through innovation and excellence."',
         "mission-title": "Our Mission",
-        "mission-text": '"To provide high-quality training and consultancy while delivering smart solutions that empower communities and drive national growth."',
+
+        // Business Divisions
         "div-title": "Our Business Divisions",
-        "div1-h": "Ceylon Education", "div1-p": "Professional diplomas and Grade 1-11 academic excellence hub.",
-        "div2-h": "Ceylon Smart Home", "div2-p": "Innovative future-tech and smart automation for modern living.",
-        "div3-h": "Ceylon Investment", "div3-p": "Strategic financial growth and professional wealth management.",
-        "div4-h": "Ceylon Micro Credit", "div4-p": "Empowering small ventures with accessible financial solutions.",
-        "div5-h": "Ceylon Auto Care", "div5-p": "Premium automobile maintenance and professional care services.",
-        "div6-h": "Ceylon Consultancy", "div6-p": "Expert strategic management and corporate growth solutions.",
-        "link-enroll": "Enroll Now →", "link-explore": "Explore Tech →", "link-grow": "Grow Wealth →", "link-credit": "Get Credit →", "link-book": "Book Service →", "link-contact": "Contact Us →",
-        "ach-title": "ACHIEVERS NIGHT 2025", "ach-sub": "From Vision to Victory",
-        "ach-desc": "Celebrating corporate excellence and honoring our top management stars marking a historical milestone in our corporate journey.",
-        "ach-btn": 'VIEW EVENT GALLERY <i class="fas fa-arrow-right"></i>',
-        "app-title": "Official Mobile App", "app-desc": "Download our official Android application now to get instant access to all career opportunities and corporate updates.",
-        "feed-title": "What Our Clients Say", "feed-form-h": "Submit Your Review",
-        "lbl-name": "FULL NAME", "lbl-msg": "YOUR MESSAGE", "btn-feed-submit": 'SUBMIT FEEDBACK <i class="fas fa-paper-plane"></i>',
-        "rev1-text": '"The Business Development services from CDI Group are highly efficient and reliable. They played a major role in expanding our corporate ventures."',
-        "rev1-role": "Entrepreneur",
-        "rev2-text": '"Offers inside the platform are incredible, truly a very friendly staff. Highly recommended!"',
-        "rev2-role": "Customer",
+        "link-enroll": "Enroll Now →",
+        "link-explore": "Explore Tech →",
+        "link-grow": "Grow Wealth →",
+        "link-credit": "Get Credit →",
+        "link-book": "Book Service →",
+        "link-contact": "Contact Us →",
+
+        // Achievers Night
+        "ach-title": "ACHIEVERS NIGHT 2025",
+        "ach-sub": "From Vision to Victory",
+
+        // Careers Section
         "car-title": "Professional Growth & Identity",
-        "car-h1": "Management Training", "car-h2": "Corporate Presence",
-        "li1": "Permanent Executive Roles", "li2": "Full Professional Training", "li3": "No Registration/Entry Fees", "li4": "Qualifications: O/L or A/L", "li5": "Age: 18 - 30 Preferred",
-        "btn-apply-text": "Apply for Careers",
+        "car-h1": "Management Training",
+        "car-h2": "Corporate Presence",
+
+        // Reviews & Feedback
+        "feed-title": "What Our Clients Say",
+        "rev1-role": "Entrepreneur",
+        "rev2-role": "Customer",
+        "feed-form-h": "Submit Your Review",
+        "lbl-name": "FULL NAME",
+        "lbl-msg": "YOUR MESSAGE",
+        "btn-feed-submit": "SUBMIT FEEDBACK",
         "foot-brand": "CEYLON DIREXA INTERNATIONAL",
-        "foot-about": "Registered under the Companies Act No. 07 of 2007, Sri Lanka. Leading the future of multi-sector corporate development as CDI Group."
+        "foot-about": "Registered under the Companies Act No. 07 of 2007, Sri Lanka. Leading the future of multi-sector corporate development as CDI Group.",
+
+        // --- Career Form Page Translations ---
+        "form-title": "MANAGEMENT TRAINING REGISTRATION",
+        "form-subtitle": "Ceylon Direxa International | CDI Group Careers",
+        "lbl-form-name": "Full Name (සම්පූර්ණ නම)",
+        "lbl-form-phone": "Contact Number (දුරකථන අංකය)",
+        "lbl-form-age": "Age (වයස)",
+        "lbl-form-district": "District (දිස්ත්‍රික්කය)",
+        "lbl-form-edu": "Highest Education Qualification",
+        "lbl-form-div": "Preferred Business Division (කැමති අංශය)",
+        "lbl-form-msg": "Briefly describe why you want to join us (ඔබ අප හා සම්බන්ධ වීමට හේතුව)"
     },
     si: {
-        "nav-join": "අප හා සම්බන්ධ වන්න",
-        "hero-title": "වෘත්තීය ගමනක්.<br>ජාත්‍යන්තර අභිමුවක්.",
-        "hero-desc": "ශ්‍රී ලංකාවේ වේගයෙන්ම වර්ධනය වන කළමනාකරණ පුහුණු මධ්‍යස්ථානය",
-        "hero-btn": "නිල ඇප් එක ලබාගන්න",
-        "stat-1": "20+", "stat-1-p": "වසරක විශිෂ්ටත්වය",
-        "stat-2": "50+", "stat-2-p": "2030 දැක්ම ශාඛා",
-        "stat-3": "100%", "stat-3-p": "ලියාපදිංචිය නොමිලේ",
-        
-        // Corporate Presence Sinhala
-        "corp-title": "ආයතනික පැවැත්ම සහ අනන්‍යතාවය",
-        "corp-h1": "ප්‍රධාන පරිපාලන කාර්යාලය",
-        "corp-p1": "අනුරාධපුර නගරයේ සිට ක්‍රියාත්මක වෙමින්, දිවයින පුරා විහිදුණු බහු-අංශ ආයතනික සංවර්ධන ව්‍යාපෘති උපායමාර්ගිකව මෙහෙයවනු ලබයි.",
-        "corp-h2": "නීතිමය අනුකූලතාවය",
-        "corp-p2": "ශ්‍රී ලංකාවේ 2007 අංක 07 දරන සමාගම් පනත යටතේ සම්පූර්ණයෙන්ම ලියාපදිංචි වී ඇති අතර, ඉහළම ආයතනික අඛණ්ඩතාව සහතික කරයි.",
-        "corp-h3": "ශාඛා ජාලකරණය",
-        "corp-p3": "2030 දැක්ම යටතේ දිවයින පුරා පූර්ණ සේවා පහසුකම් සහිත පරිපාලන ශාඛා 50 කට වඩා පිහිටුවීමේ පැහැදිලි සැලැස්මක් සහිතව වේගයෙන් වර්ධනය වේ.",
-
-        "vision-title": "අපගේ දැක්ම",
-        "vision-text": '"නවෝත්පාදනය සහ විශිෂ්ටත්වය තුළින් ශ්‍රී ලාංකීය තරුණ පරපුර ගෝලීය වෘත්තීය නායකයින් බවට පත්කිරීමේ ප්‍රමුඛතම උත්ප්‍රේරකයා වීම."',
-        "mission-title": "අපගේ මෙහෙවර",
-        "mission-text": '"ප්‍රජාවන් සබලන් කරන සහ ජාතික වර්ධනය ඉහළ නංවන ස්මාර්ට් විසඳුම් ලබා දෙන අතරම උසස් තත්ත්වයේ පුහුණුව සහ උපදේශනය සැපයීම."',
-        "div-title": "අපගේ ව්‍යාපාරික අංශයන්",
-        "div1-h": "සිලෝන් එඩියුකේෂන්", "div1-p": "වෘත්තීය ඩිප්ලෝමා සහ 1-11 ශ්‍රේණි සඳහා වූ අධ්‍යාපනික විශිෂ්ටත්ව කේන්ද්‍රස්ථානය.",
-        "div2-h": "සිලෝන් ස්මාර්ට් හෝම්", "div2-p": "නවීන ජීවන රටාව සඳහා නව්‍ය අනාගත තාක්ෂණය සහ ස්මාර්ට් ස්වයංක්‍රීයකරණය.",
-        "div3-h": "සිලෝන් ඉන්වෙස්ට්මන්ට්", "div3-p": "උපායමාර්ගික මූල්‍ය වර්ධනය සහ වෘත්තීය වත්කම් කළමනාකරණය.",
-        "div4-h": "සිලෝන් මයික්‍රෝ ක්‍රෙඩිට්", "div4-p": "සුළු පරිමාණ ව්‍යාපාර සඳහා පහසුවෙන් ලබාගත හැකි මූල්‍ය විසඳුම්.",
-        "div5-h": "සිලෝන් ඔටෝ කෙයාර්", "div5-p": "වාහන සඳහා ප්‍රමුඛ පෙළේ නඩත්තු සහ වෘත්තීය සේවා සැපයීම.",
-        "div6-h": "සිලෝන් කොන්සල්ටන්සි", "div6-p": "විශේෂඥ උපායමාර්ගික කළමනාකරණය සහ ආයතනික වර්ධන විසඳුම්.",
-        "link-enroll": "දැන්ම ලියාපදිංචි වන්න →", "link-explore": "තාක්ෂණය ගවේෂණය කරන්න →", "link-grow": "ධනය වර්ධනය කරන්න →", "link-credit": "ණය පහසුකම් ලබාගන්න →", "link-book": "සේවාව වෙන්කරන්න →", "link-contact": "අපව අමතන්න →",
-        "ach-title": "ඇචීවර්ස් නයිට් 2025", "ach-sub": "දැක්මෙන් ජයග්‍රහණය කරා",
-        "ach-desc": "අපගේ ආයතනික ගමන් මගෙහි සුවිශේෂී සන්ධිස්ථානයක් සනිටුහන් කරමින්, දක්ෂතම කළමනාකරණ තරු ඇගයීමට ලක්කෙරෙන වසරේ අභිමානවත්ම රාත්‍රිය.",
-        "ach-btn": 'ඡායාරූප ගැලරිය බලන්න <i class="fas fa-arrow-right"></i>',
-        "app-title": "නිල ජංගම දුරකථන යෙදුම (App)", "app-desc": "සියලුම රැකියා අවස්ථාවන් සහ ආයතනික තොරතුරු එසැනින් ලබාගැනීමට දැන්ම අපගේ නිල Android ඇප් එක බාගත කරගන්න.",
-        "feed-title": "පාරිභෝගික අදහස්", "feed-form-h": "ඔබේ අදහස ඇතුළත් කරන්න",
-        "lbl-name": "සම්පූර්ණ නම", "lbl-msg": "ඔබේ පණිවිඩය", "btn-feed-submit": 'අදහස් ඉදිරිපත් කරන්න <i class="fas fa-paper-plane"></i>',
-        "rev1-text": '"CDI Group (Ceylon Direxa International) එකේ Business Development සේවාව ඉතාමත් ඉක්මන් වගේම විශ්වාසදායකයි. මගේ ව්‍යාපාරය සාර්ථක කරගන්න ඔවුන් ලොකු උදව්වක් වුණා."',
-        "rev1-role": "ව්‍යවසායක",
-        "rev2-text": '"Offers නම් ඉතින් Ceylon තමයි, ඇත්තටම මාර friendly කාර්‍ය මණ්ඩලයක්.සුභ පැතුම්."',
-        "rev2-role": "පාරිභෝගිකයා",
-        "car-title": "වෘත්තීය වර්ධනය සහ අනන්‍යතාවය",
-        "car-h1": "කළමනාකරණ පුහුණුව", "car-h2": "ආයතනික තොරතුරු",
-        "li1": "ස්ථිර විධායක නිලතල", "li2": "සම්පූර්ණ වෘත්තීය පුහුණුව", "li3": "ලියාපදිංචි හෝ ඇතුළත් වීමේ ගාස්තු නොමැත", "li4": "සුදුසුකම්: සාමාන්‍ය පෙළ හෝ උසස් පෙළ", "li5": "වයස: අවුරුදු 18 - 30 අතර විශේෂයි",
+        // Navigation & General Buttons
+        "nav-join": "අපගේ කණ්ඩායමට එකතු වන්න",
         "btn-apply-text": "රැකියා සඳහා අයදුම් කරන්න",
-        "foot-brand": "සිලෝන් ඩිරෙක්සා ඉන්ටර්නැෂනල්",
-        "foot-about": "2007 අංක 07 දරන සමාගම් පනත යටතේ ශ්‍රී ලංකාවේ ලියාපදිංචි කර ඇත. CDI Group ලෙස බහු-අංශ ආයතනික සංවර්ධනයේ අනාගතය මෙහෙයවනු ලබයි."
+        "hero-btn": "නිල ඇප් එක ලබාගන්න",
+        "ach-btn": "උත්සවයේ ඡායාරූප බලන්න",
+
+        // Corporate Presence Section
+        "corp-title": "අපගේ ආයතනික පැවැත්ම",
+        "corp-h1": "ලියාපදිංචි ප්‍රධාන කාර්යාලය",
+        "corp-p1": "අනුරාධපුරයේ සිට ක්‍රියාත්මක වෙමින්, දිවයින පුරා උපායමාර්ගික බහුවිධ ආයතනික සංවර්ධන ව්‍යාපෘති මෙහෙයවනු ලබයි.",
+        "corp-h2": "නීතිමය අනුකූලතාවය",
+        "corp-p2": "2007 අංක 07 දරන සමාගම් පනත යටතේ පූර්ණ ලෙස ලියාපදිංචි වී ඇති අතර, නිරන්තර ආයතනික අඛණ්ඩතාවය සහතික කරයි.",
+        "corp-h3": "ශාඛා ජාලය",
+        "corp-p3": "Vision 2030 යටතේ පූර්ණ පරිපාලන මධ්‍යස්ථාන 50කට වඩා පිහිටුවීමේ පැහැදිලි සැලැස්මක් සහිතව වේගයෙන් ව්‍යාප්ත වේ.",
+
+        // Vision & Mission
+        "vision-title": "අපගේ දැක්ම",
+        "mission-title": "අපගේ මෙහෙවර",
+
+        // Business Divisions
+        "div-title": "අපගේ ව්‍යාපාරික අංශයන්",
+        "link-enroll": "දැන්ම සම්බන්ධ වන්න →",
+        "link-explore": "තාක්ෂණය ගවේෂණය කරන්න →",
+        "link-grow": "ධනය වර්ධනය කරගන්න →",
+        "link-credit": "ණය පහසුකම් ලබාගන්න →",
+        "link-book": "සේවාවන් වෙන්කරවා ගන්න →",
+        "link-contact": "අපව සම්බන්ධ කරගන්න →",
+
+        // Achievers Night
+        "ach-title": "ඇචීවර්ස් නයිට් 2025",
+        "ach-sub": "දැක්මෙන් ජයග්‍රහණය කරා",
+
+        // Careers Section
+        "car-title": "වෘත්තීය වර්ධනය සහ අනන්‍යතාවය",
+        "car-h1": "කළමනාකරණ පුහුණුව",
+        "car-h2": "ආයතනික පැවැත්ම",
+
+        // Reviews & Feedback
+        "feed-title": "අපගේ සේවාදායකයින් පවසන දේ",
+        "rev1-role": "ව්‍යවසායක",
+        "rev2-role": "පාරිභෝගික",
+        "feed-form-h": "ඔබේ අදහස් ඉදිරිපත් කරන්න",
+        "lbl-name": "සම්පූර්ණ නම",
+        "lbl-msg": "ඔබේ පණිවිඩය",
+        "btn-feed-submit": "අදහස් සබ්මිට් කරන්න",
+        "foot-brand": "සීලෝන් ඩිරෙක්සා ඉන්ටර්නැෂනල්",
+        "foot-about": "ශ්‍රී ලංකාවේ 2007 අංක 07 දරන සමාගම් පනත යටතේ ලියාපදිංචි කර ඇත. CDI සමූහය ලෙස බහුවිධ ආයතනික සංවර්ධනයේ අනාගතය මෙහෙයවයි.",
+
+        // --- Career Form Page Translations ---
+        "form-title": "කළමනාකරණ පුහුණු ලියාපදිංචිය",
+        "form-subtitle": "සීලෝන් ඩිරෙක්සා ඉන්ටර්නැෂනල් | CDI සමූහ වෘත්තීය අවස්ථාවන්",
+        "lbl-form-name": "සම්පූර්ණ නම (Full Name)",
+        "lbl-form-phone": "දුරකථන අංකය (Contact Number)",
+        "lbl-form-age": "වයස (Age)",
+        "lbl-form-district": "දිස්ත්‍රික්කය (District)",
+        "lbl-form-edu": "ඉහළම අධ්‍යාපන සුදුසුකම",
+        "lbl-form-div": "කැමති ව්‍යාපාරික අංශය (Preferred Division)",
+        "lbl-form-msg": "ඔබ අප හා සම්බන්ධ වීමට හේතුව කෙටියෙන් සඳහන් කරන්න"
     }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-    const btnEn = document.getElementById("btn-en");
-    const btnSi = document.getElementById("btn-si");
+// Language Change Function
+function setLanguage(lang) {
+    localStorage.setItem('cdi-lang', lang);
     
-    function setLanguage(lang) {
-        localStorage.setItem("selectedLang", lang);
-        if (lang === "si") { btnSi.classList.add("active"); btnEn.classList.remove("active"); } 
-        else { btnEn.classList.add("active"); btnSi.classList.remove("active"); }
-        
-        const idElements = ["hero-title", "hero-desc", "hero-btn", "vision-text", "mission-text", "div1-h", "div1-p", "div2-h", "div2-p", "div3-h", "div3-p", "div4-h", "div4-p", "div5-h", "div5-p", "div6-h", "div6-p", "ach-desc", "ach-btn", "app-desc", "rev1-text", "rev2-text", "stat-1", "stat-2", "stat-3"];
-        idElements.forEach(id => {
-            const el = document.getElementById(id);
-            if (el && translations[lang][id]) el.innerHTML = translations[lang][id];
-        });
-        
-        const dataElements = document.querySelectorAll("[data-key]");
-        dataElements.forEach(el => {
-            const key = el.getAttribute("data-key");
-            if (translations[lang][key]) el.innerHTML = translations[lang][key];
-        });
-    }
+    // Update all elements with data-key attribute
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
 
-    if(btnEn && btnSi) {
-        btnEn.addEventListener("click", () => setLanguage("en"));
-        btnSi.addEventListener("click", () => setLanguage("si"));
+    // Update active class on buttons
+    const btnEn = document.getElementById('btn-en');
+    const btnSi = document.getElementById('btn-si');
+    
+    if (btnEn && btnSi) {
+        if (lang === 'si') {
+            btnSi.classList.add('active');
+            btnEn.classList.remove('active');
+        } else {
+            btnEn.classList.add('active');
+            btnSi.classList.remove('active');
+        }
     }
-    const savedLang = localStorage.getItem("selectedLang") || "en";
+}
+
+// Event Listeners for Buttons
+document.addEventListener('DOMContentLoaded', () => {
+    const btnEn = document.getElementById('btn-en');
+    const btnSi = document.getElementById('btn-si');
+
+    if (btnEn) btnEn.addEventListener('click', () => setLanguage('en'));
+    if (btnSi) btnSi.addEventListener('click', () => setLanguage('si'));
+
+    // Load saved language or default to English
+    const savedLang = localStorage.getItem('cdi-lang') || 'en';
     setLanguage(savedLang);
 });

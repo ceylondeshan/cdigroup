@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceylon Direxa International | CDI Group</title>
+    <!-- Premium Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Connected to assets/css/style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+    <!-- Premium Header Navigation -->
     <header class="glass-header">
         <div class="logo-container">
             <img src="logo.png" alt="CDI Group Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50?text=CDI';">
@@ -20,26 +23,30 @@
             </div>
         </div>
         <div class="header-right">
+            <!-- Premium Language Switcher -->
             <div class="lang-switcher">
                 <button id="btn-en" class="active">EN</button>
                 <button id="btn-si">සිං</button>
             </div>
-            <a href="https://wa.me/94775009505" target="_blank" class="whatsapp-btn">
+            <!-- WhatsApp Chat Button (Updated to correct 9504 number) -->
+            <a href="https://wa.me/94775009504" target="_blank" class="whatsapp-btn">
                 <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
             <a href="apply-reg.html" class="nav-btn premium-btn" data-key="nav-join">JOIN OUR TEAM</a>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h2 id="hero-title">Building Careers.<br>Expanding Horizons.</h2>
             <p id="hero-desc">The Fastest Growing Management Training Hub in Sri Lanka</p>
-            <a href="assets/app/cdi-app.apk" download class="hero-btn-main" id="hero-btn">GET OFFICIAL APP</a>
+            <button onclick="triggerDownload()" class="hero-btn-main" id="hero-btn">GET OFFICIAL APP</button>
         </div>
     </section>
 
+    <!-- Stats Counter Section -->
     <section class="stats-section">
         <div class="stats-grid">
             <div class="stat-card">
@@ -57,6 +64,7 @@
         </div>
     </section>
 
+    <!-- Corporate Presence Section -->
     <section class="corporate-presence-section">
         <div class="container">
             <h2 class="section-title" data-key="corp-title">Our Corporate Presence</h2>
@@ -80,6 +88,7 @@
         </div>
     </section>
 
+    <!-- Vision & Mission Section -->
     <section class="vision-mission-section">
         <div class="container">
             <div class="vm-grid">
@@ -97,6 +106,7 @@
         </div>
     </section>
 
+    <!-- Business Divisions Section -->
     <section class="divisions-section">
         <div class="container">
             <h2 class="section-title" data-key="div-title">Our Business Divisions</h2>
@@ -141,6 +151,7 @@
         </div>
     </section>
 
+    <!-- Achievers Night Highlight -->
     <section class="achievers-section">
         <div class="achievers-container">
             <div class="achievers-content">
@@ -152,6 +163,7 @@
         </div>
     </section>
 
+    <!-- Careers Section -->
     <section class="careers-section">
         <div class="container">
             <div class="careers-grid">
@@ -185,6 +197,7 @@
         </div>
     </section>
 
+    <!-- App Download CTA -->
     <section class="app-cta-section">
         <div class="container">
             <div class="app-grid">
@@ -192,15 +205,17 @@
                     <h2 data-key="app-title">Official Mobile App</h2>
                     <p id="app-desc">සියලුම රැකියා අවස්ථාවන් සහ ආයතනික තොරතුරු එසැනින් ලබාගැනීමට දැන්ම අපගේ නිල Android ඇප් එක බාගත කරගන්න.</p>
                     <div class="store-buttons">
-                        <a href="assets/app/cdi-app.apk" download class="store-btn">
+                        <!-- Premium Smart Button for APK Download -->
+                        <button onclick="triggerDownload()" class="store-btn" style="border:none; cursor:pointer;">
                             <i class="fab fa-android"></i> DOWNLOAD APK NOW
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Reviews Section -->
     <section class="feedback-section">
         <div class="container">
             <h2 class="section-title" data-key="feed-title">What Our Clients Say</h2>
@@ -235,6 +250,7 @@
         </div>
     </section>
 
+    <!-- Premium Footer -->
     <footer class="premium-footer">
         <div class="container">
             <div class="footer-grid">
@@ -258,12 +274,13 @@
                     </ul>
                 </div>
 
+                <!-- 100%ක් නිවැරදි කළ Contact Info කොටස -->
                 <div class="footer-col">
                     <h4>CONTACT INFO</h4>
                     <p><i class="fas fa-map-marker-alt"></i> Anuradhapura, Sri Lanka</p>
                     <p><i class="fas fa-envelope"></i> info@cdigroup.lk</p>
-                    <p><i class="fas fa-phone-alt"></i> +94 77 500 9505</p>
-                    <p><i class="fas fa-phone-alt"></i> +94 74 3693 209</p>
+                    <p><i class="fas fa-phone-alt"></i> +94 77 500 9504</p>
+                    <p><i class="fas fa-phone-alt"></i> +94 74 369 3209</p>
                 </div>
 
                 <div class="footer-col">
@@ -280,6 +297,31 @@
         </div>
     </footer>
 
+    <!-- Smart Download JavaScript Engine -->
+    <script>
+        function triggerDownload() {
+            const apkPath = 'assets/app/cdi-app.apk';
+            
+            // Create a hidden anchor element
+            const link = document.createElement('a');
+            link.href = apkPath;
+            link.setAttribute('download', 'cdi-app.apk');
+            document.body.appendChild(link);
+            
+            // Trigger click execution
+            link.click();
+            
+            // Cleanup execution
+            document.body.removeChild(link);
+            
+            // Fallback for strict mobile web views
+            setTimeout(() => {
+                window.location.href = apkPath;
+            }, 300);
+        }
+    </script>
+
+    <!-- Connected to assets/js/language.js -->
     <script src="assets/js/language.js"></script>
 </body>
 </html>

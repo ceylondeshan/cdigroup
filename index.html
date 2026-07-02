@@ -10,6 +10,20 @@
     
     <!-- Connected to assets/css/style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Premium Typing Animation Cursor Style */
+        .typing-cursor {
+            color: #d4af37; /* Premium Gold Cursor */
+            font-weight: bold;
+            animation: blink 0.7s infinite;
+            margin-left: 2px;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
 </head>
 <body>
 
@@ -18,8 +32,11 @@
         <div class="logo-container">
             <img src="logo.png" alt="CDI Group Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50?text=CDI';">
             <div class="brand-text">
-                <h1>CEYLON DIREXA INTERNATIONAL</h1>
-                <span>CDI GROUP (PVT) LTD</span>
+                <!-- 1. මෙතනට තමයි Typing Animation එක සෙට් වෙන්නේ -->
+                <h1 style="min-height: 28px; margin: 0; font-size: 18px; display: flex; align-items: center;">
+                    <span id="typing-text" style="color: #ffffff;"></span><span class="typing-cursor">|</span>
+                </h1>
+                <span>MANAGEMENT TRAINING HUB</span>
             </div>
         </div>
         <div class="header-right">
@@ -297,6 +314,52 @@
             </div>
         </div>
     </footer>
+
+    <!-- Premium Typing Animation Engine -->
+    <script>
+        const words = ["CEYLON DIREXA INTERNATIONAL", "CDI GROUP (PVT) LTD"];
+        let i = 0;
+        let timer;
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function() {
+                if (word.length > 0) {
+                    document.getElementById('typing-text').innerHTML += word.shift();
+                } else {
+                    setTimeout(deletingEffect, 2500); // පෙන්වාගෙන සිටින කාලය
+                    return false;
+                }
+                timer = setTimeout(loopTyping, 80); // ටයිප් වන වේගය
+            };
+            loopTyping();
+        }
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function() {
+                if (word.length > 0) {
+                    word.pop();
+                    document.getElementById('typing-text').innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    setTimeout(typingEffect, 500); // ඊළඟ වචනයට පෙර පොඩි බ්‍රේක් එකක්
+                    return false;
+                }
+                timer = setTimeout(loopDeleting, 40); // මැකෙන වේගය
+            };
+            loopDeleting();
+        }
+
+        // සයිට් එක ලෝඩ් වූ විගස ක්‍රියාත්මක වීම
+        document.addEventListener("DOMContentLoaded", function() {
+            typingEffect();
+        });
+    </script>
 
     <!-- Connected to assets/js/language.js -->
     <script src="assets/js/language.js"></script>

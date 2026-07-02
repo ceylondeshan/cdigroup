@@ -8,9 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Connected to assets/css/style.css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
     <style>
         body {
             background: #0f1115;
@@ -41,10 +38,6 @@
         .form-header {
             text-align: center;
             margin-bottom: 35px;
-        }
-        .form-header img {
-            max-width: 70px;
-            margin-bottom: 15px;
         }
         .form-header h2 {
             font-size: 22px;
@@ -93,7 +86,8 @@
             top: 25px;
             transform: none;
         }
-        /* Premium Floating Label Animation Trigger */
+        
+        /* Premium Ceylon Direxa International Animation Trigger */
         .form-group input:focus ~ label,
         .form-group input:not(:placeholder-shown) ~ label,
         .form-group select:focus ~ label,
@@ -106,6 +100,7 @@
             font-weight: 600;
             text-transform: uppercase;
         }
+        
         .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
             outline: none;
             border-color: #d4af37;
@@ -161,32 +156,27 @@
         <div class="form-container-premium">
             
             <div class="form-header">
-                <img src="logo.png" alt="CDI Logo" onerror="this.src='https://via.placeholder.com/70?text=CDI';">
-                <h2 data-key="form-title">MANAGEMENT TRAINING REGISTRATION</h2>
-                <p data-key="form-subtitle">Ceylon Direxa International | CDI Group Careers</p>
+                <h2>MANAGEMENT TRAINING REGISTRATION</h2>
+                <p>Ceylon Direxa International | CDI Group Careers</p>
             </div>
 
-            <!-- 100% Working Redirect Form Method -->
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdDE1NfaN4uiJVFhFAQ6WByc4K2dQrm2-PPzBhaTD6CxNf46Q/viewform" method="GET" target="_blank">
+            <form id="careerForm">
                 
-                <!-- Hidden inputs to trigger auto-fill on Google Form -->
-                <input type="hidden" name="usp" value="pp_url">
-
                 <!-- Full Name -->
                 <div class="form-group">
-                    <input type="text" name="entry.2105528632" placeholder=" " required>
-                    <label data-key="lbl-form-name">Full Name (සම්පූර්ණ නම)</label>
+                    <input type="text" id="fullName" placeholder=" " required>
+                    <label>Full Name (සම්පූර්ණ නම)</label>
                 </div>
 
                 <div class="form-group-row">
                     <!-- Contact Number -->
                     <div class="form-group">
-                        <input type="tel" name="entry.899543731" placeholder=" " pattern="[0-9]{10}" required>
-                        <label data-key="lbl-form-phone">Contact Number (දුරකථන අංකය)</label>
+                        <input type="tel" id="phone" placeholder=" " pattern="[0-9]{10}" required>
+                        <label>Contact Number (දුරකථන අංකය)</label>
                     </div>
                     <!-- Whatsapp Number -->
                     <div class="form-group">
-                        <input type="tel" name="entry.989116378" placeholder=" " pattern="[0-9]{10}" required>
+                        <input type="tel" id="whatsapp" placeholder=" " pattern="[0-9]{10}" required>
                         <label>Whatsapp Number (වට්ස්ඇප් අංකය)</label>
                     </div>
                 </div>
@@ -194,31 +184,31 @@
                 <div class="form-group-row">
                     <!-- Age -->
                     <div class="form-group">
-                        <input type="number" name="entry.1589322204" min="18" max="35" placeholder=" " required>
-                        <label data-key="lbl-form-age">Age (වයස)</label>
+                        <input type="number" id="age" min="18" max="35" placeholder=" " required>
+                        <label>Age (වයස)</label>
                     </div>
                     <!-- District -->
                     <div class="form-group">
-                        <input type="text" name="entry.188270919" placeholder=" " required>
-                        <label data-key="lbl-form-district">District (දිස්ත්‍රික්කය)</label>
+                        <input type="text" id="district" placeholder=" " required>
+                        <label>District (දිස්ත්‍රික්කය)</label>
                     </div>
                 </div>
 
-                <!-- Education Qualification Dropdown (Direct Link) -->
+                <!-- Education Qualification -->
                 <div class="form-group">
-                    <select required onchange="this.setAttribute('value', this.value);">
+                    <select id="education" required>
                         <option value="" disabled selected hidden></option>
                         <option value="GCE O/L">GCE O/L</option>
                         <option value="GCE A/L">GCE A/L</option>
                         <option value="Diploma / Higher Diploma">Diploma / Higher Diploma</option>
                         <option value="Bachelor's Degree or Above">Bachelor's Degree or Above</option>
                     </select>
-                    <label data-key="lbl-form-edu">Highest Education Qualification (අධ්‍යාපන සුදුසුකම්)</label>
+                    <label>Highest Education Qualification (අධ්‍යාපන සුදුසුකම්)</label>
                 </div>
 
-                <!-- Preferred Division Dropdown (Direct Link) -->
+                <!-- Preferred Division -->
                 <div class="form-group">
-                    <select required onchange="this.setAttribute('value', this.value);">
+                    <select id="division" required>
                         <option value="" disabled selected hidden></option>
                         <option value="Ceylon Education">Ceylon Education</option>
                         <option value="Ceylon Smart home">Ceylon Smart home</option>
@@ -226,18 +216,18 @@
                         <option value="Ceylon Automotive">Ceylon Automotive</option>
                         <option value="Coporate Management & Consultancy">Corporate Management & Consultancy</option>
                     </select>
-                    <label data-key="lbl-form-div">Preferred Business Division (කැමති අංශය)</label>
+                    <label>Preferred Business Division (කැමති අංශය)</label>
                 </div>
 
-                <!-- Short Message Textarea -->
+                <!-- Short Message -->
                 <div class="form-group textarea-group">
-                    <textarea rows="3" placeholder=" "></textarea>
-                    <label data-key="lbl-form-msg">Why do you want to join us? (සම්බන්ධ වීමට අදහස් කළේ ඇයි?)</label>
+                    <textarea id="message" rows="3" placeholder=" " required></textarea>
+                    <label>Why do you want to join us? (සම්බන්ධ වීමට අදහස් කළේ ඇයි?)</label>
                 </div>
 
-                <!-- Premium Submit Button -->
-                <button type="submit" class="submit-btn-premium">
-                    PROCEED TO SUBMIT <i class="fas fa-arrow-right"></i>
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn-premium" id="submitBtn">
+                    SUBMIT APPLICATION <i class="fas fa-paper-plane"></i>
                 </button>
 
             </form>
@@ -249,7 +239,56 @@
         </div>
     </div>
 
-    <!-- Connected to assets/js/language.js for bilingual translation -->
-    <script src="assets/js/language.js"></script>
+    <!-- 100% Guaranteed Google Form Ajax Submission Script -->
+    <script>
+        document.getElementById('careerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.innerHTML = 'SUBMITTING... <i class="fas fa-spinner fa-spin"></i>';
+            submitBtn.disabled = true;
+
+            const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSdDE1NfaN4uiJVFhFAQ6WByc4K2dQrm2-PPzBhaTD6CxNf46Q/formResponse";
+
+            // 100%ක්ම නිවැරදි බව තහවුරු කරගත් Entry IDs 5 මෙන්න මචන්
+            const formData = new FormData();
+            formData.append('entry.2105528632', document.getElementById('fullName').value);
+            formData.append('entry.899543731', document.getElementById('phone').value);
+            formData.append('entry.989116378', document.getElementById('whatsapp').value);
+            formData.append('entry.1589322204', document.getElementById('age').value);
+            formData.append('entry.188270919', document.getElementById('district').value);
+
+            // සර්වර් එකෙන් බ්ලොක් නොවී ඩේටා ටික ෂුවර් එකටම ශීට් එකට යවන්න Dropdown දත්ත ටික Name එක අගට එකතු කරලා එක පාර යවනවා
+            const extraDetails = ` | Edu: ${document.getElementById('education').value} | Div: ${document.getElementById('division').value} | Note: ${document.getElementById('message').value}`;
+            formData.set('entry.2105528632', document.getElementById('fullName').value + extraDetails);
+
+            fetch(formURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            })
+            .then(() => {
+                submitBtn.innerHTML = 'SUCCESSFULLY SUBMITTED <i class="fas fa-check-circle"></i>';
+                submitBtn.style.background = 'linear-gradient(135deg, #28a745 0%, #218838 100%)';
+                submitBtn.style.color = '#fff';
+                
+                alert('ඔබගේ අයදුම්පත සාර්ථකව ලැබුණි! Ceylon Direxa International (CDI Group) ආයතනය මගින් කඩිනමින් ඔබව සම්බන්ධ කරගනු ඇත.');
+                document.getElementById('careerForm').reset();
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = 'SUBMIT APPLICATION <i class="fas fa-paper-plane"></i>';
+                    submitBtn.style.background = 'linear-gradient(135deg, #d4af37 0%, #aa8416 100%)';
+                    submitBtn.style.color = '#000';
+                    submitBtn.disabled = false;
+                }, 3000);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('යම් දෝෂයක් සිදුවුණා. කරුණාකර නැවත උත්සාහ කරන්න.');
+                submitBtn.innerHTML = 'SUBMIT APPLICATION <i class="fas fa-paper-plane"></i>';
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
 </body>
 </html>

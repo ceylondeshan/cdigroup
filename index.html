@@ -11,18 +11,21 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="logo.png">
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body> 
 
-<a href="https://wa.me/94775009504" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/94775009504" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a> 
 
-<header>
+<header class="glass-header">
     <div class="logo-container">
         <img src="logo.png" alt="CIG Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50?text=CDI';">
         <div class="brand-text">
@@ -35,94 +38,110 @@
             <button id="btn-en" class="active">EN</button>
             <button id="btn-si">සිං</button>
         </div>
-        <a href="apply-reg.html" class="nav-btn" data-key="nav-join">JOIN OUR TEAM</a>
+        <a href="apply-reg.html" class="nav-btn premium-btn" data-key="nav-join">JOIN OUR TEAM</a>
     </div>
 </header> 
 
-<section class="hero">
-    <div class="reveal active">
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal active">
         <h2 id="hero-title">Building Careers.<br>Expanding Horizons.</h2>
         <p id="hero-desc">The Fastest Growing Management Training Hub in Sri Lanka</p>
-        <a href="#download" class="btn-download" id="hero-btn">GET OFFICIAL APP</a>
-    </div>
-</section> 
-
-<div class="stats-bar reveal">
-    <div class="stat-item"><h3 id="stat-1">20+</h3><p data-key="stat-1-p">Years Excellence</p></div>
-    <div class="stat-item"><h3 id="stat-2">50+</h3><p data-key="stat-2-p">Vision 2030 Branches</p></div>
-    <div class="stat-item"><h3 id="stat-3">100%</h3><p data-key="stat-3-p">Registration Free</p></div>
-</div> 
-
-<section class="container">
-    <div class="card-grid">
-        <div class="vm-card reveal">
-            <i class="fas fa-eye"></i>
-            <h3 data-key="vision-title">Our Vision</h3>
-            <p id="vision-text">"To be the premier catalyst in transforming Sri Lankan youth into global professional leaders through innovation and excellence."</p>
-        </div>
-        <div class="vm-card reveal">
-            <i class="fas fa-bullseye"></i>
-            <h3 data-key="mission-title">Our Mission</h3>
-            <p id="mission-text">"To provide high-quality training and consultancy while delivering smart solutions that empower communities and drive national growth."</p>
+        <div class="hero-buttons">
+            <a href="#download" class="btn-premium-gold" id="hero-btn">GET OFFICIAL APP</a>
         </div>
     </div>
 </section> 
 
-<section id="divisions" class="full-width-bg">
+<div class="stats-container container">
+    <div class="stats-bar reveal">
+        <div class="stat-item">
+            <h3 id="stat-1">20+</h3>
+            <p data-key="stat-1-p">Years Excellence</p>
+        </div>
+        <div class="stat-item">
+            <h3 id="stat-2">50+</h3>
+            <p data-key="stat-2-p">Vision 2030 Branches</p>
+        </div>
+        <div class="stat-item">
+            <h3 id="stat-3">100%</h3>
+            <p data-key="stat-3-p">Registration Free</p>
+        </div>
+    </div>
+</div>
+
+<section class="section-white">
+    <div class="container">
+        <div class="card-grid">
+            <div class="vm-card glass-card reveal">
+                <div class="vm-icon-box"><i class="fas fa-eye"></i></div>
+                <h3 data-key="vision-title">Our Vision</h3>
+                <p id="vision-text">"To be the premier catalyst in transforming Sri Lankan youth into global professional leaders through innovation and excellence."</p>
+            </div>
+            <div class="vm-card glass-card reveal">
+                <div class="vm-icon-box"><i class="fas fa-bullseye"></i></div>
+                <h3 data-key="mission-title">Our Mission</h3>
+                <p id="mission-text">"To provide high-quality training and consultancy while delivering smart solutions that empower communities and drive national growth."</p>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section id="divisions" class="section-light">
     <div class="container">
         <h2 class="section-title reveal" data-key="div-title">Our Business Divisions</h2>
         <div class="card-grid">
             
-            <div class="biz-card reveal">
-                <div class="card-inner border-blue">
+            <div class="biz-card glass-card reveal">
+                <div class="card-inner-content">
                     <i class="fas fa-book-reader color-blue"></i>
-                    <h4 data-key="div1-h">Ceylon Education</h4>
-                    <p data-key="div1-p">Professional diplomas and Grade 1-11 academic excellence hub.</p>
+                    <h4 id="div1-h">Ceylon Education</h4>
+                    <p id="div1-p">Professional diplomas and Grade 1-11 academic excellence hub.</p>
                     <a href="edu-reg.html" class="card-link" data-key="link-enroll">Enroll Now →</a>
                 </div>
             </div> 
 
-            <div class="biz-card reveal">
-                <div class="card-inner border-yellow">
-                    <i class="fas fa-microchip color-yellow"></i>
-                    <h4 data-key="div2-h">Ceylon Smart Home</h4>
-                    <p data-key="div2-p">Innovative future-tech and smart automation for modern living.</p>
+            <div class="biz-card glass-card reveal">
+                <div class="card-inner-content">
+                    <i class="fas fa-microchip color-gold"></i>
+                    <h4 id="div2-h">Ceylon Smart Home</h4>
+                    <p id="div2-p">Innovative future-tech and smart automation for modern living.</p>
                     <a href="smart-reg.html" class="card-link" data-key="link-explore">Explore Tech →</a>
                 </div>
             </div> 
 
-            <div class="biz-card reveal">
-                <div class="card-inner border-green">
+            <div class="biz-card glass-card reveal">
+                <div class="card-inner-content">
                     <i class="fas fa-chart-line color-green"></i>
-                    <h4 data-key="div3-h">Ceylon Investment</h4>
-                    <p data-key="div3-p">Strategic financial growth and professional wealth management.</p>
+                    <h4 id="div3-h">Ceylon Investment</h4>
+                    <p id="div3-p">Strategic financial growth and professional wealth management.</p>
                     <a href="investment-reg.html" class="card-link" data-key="link-grow">Grow Wealth →</a>
                 </div>
             </div> 
 
-            <div class="biz-card reveal">
-                <div class="card-inner border-red">
+            <div class="biz-card glass-card reveal">
+                <div class="card-inner-content">
                     <i class="fas fa-hand-holding-usd color-red"></i>
-                    <h4 data-key="div4-h">Ceylon Micro Credit</h4>
-                    <p data-key="div4-p">Empowering small ventures with accessible financial solutions.</p>
+                    <h4 id="div4-h">Ceylon Micro Credit</h4>
+                    <p id="div4-p">Empowering small ventures with accessible financial solutions.</p>
                     <a href="credit-reg.html" class="card-link" data-key="link-credit">Get Credit →</a>
                 </div>
             </div> 
 
-            <div class="biz-card reveal">
-                <div class="card-inner border-dark">
+            <div class="biz-card glass-card reveal">
+                <div class="card-inner-content">
                     <i class="fas fa-car-cog color-dark"></i>
-                    <h4 data-key="div5-h">Ceylon Auto Care</h4>
-                    <p data-key="div5-p">Premium automobile maintenance and professional care services.</p>
+                    <h4 id="div5-h">Ceylon Auto Care</h4>
+                    <p id="div5-p">Premium automobile maintenance and professional care services.</p>
                     <a href="autocare-reg.html" class="card-link" data-key="link-book">Book Service →</a>
                 </div>
             </div> 
 
-            <div class="biz-card reveal">
-                <div class="card-inner border-orange">
+            <div class="biz-card glass-card reveal">
+                <div class="card-inner-content">
                     <i class="fas fa-handshake color-orange"></i>
-                    <h4 data-key="div6-h">Ceylon Consultancy</h4>
-                    <p data-key="div6-p">Expert strategic management and corporate growth solutions.</p>
+                    <h4 id="div6-h">Ceylon Consultancy</h4>
+                    <p id="div6-p">Expert strategic management and corporate growth solutions.</p>
                     <a href="con-reg.html" class="card-link" data-key="link-contact">Contact Us →</a>
                 </div>
             </div> 
@@ -131,63 +150,65 @@
     </div>
 </section> 
 
-<section id="achievers" class="achievers-bg">
-    <div class="reveal container-small">
-        <div class="achievers-box">
-            <i class="fas fa-trophy"></i>
+<section id="achievers" class="section-dark-blue">
+    <div class="container-small reveal">
+        <div class="achievers-glass-box">
+            <div class="trophy-icon"><i class="fas fa-trophy"></i></div>
             <h2 data-key="ach-title">ACHIEVERS NIGHT 2025</h2>
             <h4 data-key="ach-sub">From Vision to Victory</h4>
             <p id="ach-desc">අපගේ ආයතනික ගමන් මගෙහි සුවිශේෂී සන්ධිස්ථානයක් සනිටුහන් කරමින්, දක්ෂතම කළමනාකරණ තරු ඇගයීමට ලක්කෙරෙන වසරේ අභිමානවත්ම රාත්‍රිය.</p>
-            <a href="achievers.html" class="btn-download btn-gold" data-key="ach-btn">VIEW EVENT GALLERY <i class="fas fa-arrow-right"></i></a>
+            <a href="achievers.html" class="btn-premium-gold" data-key="ach-btn">VIEW EVENT GALLERY <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
 </section> 
 
-<section id="download" class="container">
-    <div class="download-box reveal">
-        <i class="fab fa-android"></i>
-        <h2 data-key="app-title">Official Mobile App</h2>
-        <p id="app-desc">සියලුම රැකියා අවස්ථාවන් සහ ආයතනික තොරතුරු එසැනින් ලබාගැනීමට දැන්ම අපගේ නිල Android ඇප් එක බාගත කරගන්න.</p>
-        <a href="https://apk.e-droid.net/apk/app3895559-3dq186.apk?v=2" class="btn-download">
-            <i class="fas fa-cloud-download-alt"></i> DOWNLOAD APK NOW
-        </a>
+<section id="download" class="section-white">
+    <div class="container">
+        <div class="download-premium-box reveal">
+            <div class="android-icon"><i class="fab fa-android"></i></div>
+            <h2 data-key="app-title">Official Mobile App</h2>
+            <p id="app-desc">සියලුම රැකියා අවස්ථාවන් සහ ආයතනික තොරතුරු එසැනින් ලබාගැනීමට දැන්ම අපගේ නිල Android ඇප් එක බාගත කරගන්න.</p>
+            <a href="https://apk.e-droid.net/apk/app3895559-3dq186.apk?v=2" class="btn-premium-dark">
+                <i class="fas fa-cloud-download-alt"></i> DOWNLOAD APK NOW
+            </a>
+        </div>
     </div>
 </section>
 
-<section id="feedback-section" class="full-width-bg">
+<section id="feedback-section" class="section-light">
     <div class="container">
         <h2 class="section-title reveal" data-key="feed-title">What Our Clients Say</h2>
-        <div class="feedback-flex">
-            <div class="feedback-form-box">
+        <div class="feedback-layout">
+            <div class="feedback-form-card glass-card reveal">
                 <h3><i class="fas fa-comment-dots"></i> <span data-key="feed-form-h">Submit Your Review</span></h3>
                 <form action="https://formspree.io/f/xqeenjjd" method="POST">
-                    <div class="form-group">
+                    <div class="form-input-group">
                         <label data-key="lbl-name">FULL NAME</label>
                         <input type="text" name="Name" placeholder="ඔබේ නම" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-input-group">
                         <label data-key="lbl-msg">YOUR MESSAGE</label>
                         <textarea name="Message" rows="4" placeholder="ඔබේ අදහස මෙහි ලියන්න..." required></textarea>
                     </div>
-                    <button type="submit" data-key="btn-feed-submit">SUBMIT FEEDBACK <i class="fas fa-paper-plane"></i></button>
+                    <button type="submit" class="btn-submit-premium" data-key="btn-feed-submit">SUBMIT FEEDBACK <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
-            <div class="reviews-list-box">
-                <div class="review-item border-lightblue">
+            <div class="reviews-wrapper">
+                <div class="review-premium-card glass-card reveal border-top-blue">
                     <p id="rev1-text">"Ceylon International Group එකේ Business Development සේවාව ඉතාමත් ඉක්මන් වගේම විශ්වාසදායකයි. මගේ ව්‍යාපාරය සාර්ථක කරගන්න ඔවුන් ලොකු උදව්වක් වුණා."</p>
-                    <div class="reviewer-info">
-                        <div class="avatar bg-lightblue">S</div>
-                        <div>
+                    <div class="reviewer-meta">
+                        <div class="avatar-circle avatar-blue">S</div>
+                        <div class="reviewer-details">
                             <h4>Sujith Devasingha</h4>
                             <small data-key="rev1-role">Entrepreneur</small>
                         </div>
                     </div>
                 </div>
-                <div class="review-item border-lightgreen">
+                <div class="review-premium-card glass-card reveal border-top-green">
                     <p id="rev2-text">"Offers නම් ඉතින් Ceylon තමයි, ඇත්තටම මාර friendly කාර්‍ය මණ්ඩලයක්.සුභ පැතුම්."</p>
-                    <div class="reviewer-info">
-                        <div class="avatar bg-lightgreen">A</div>
-                        <div>
+                    <div class="reviewer-meta">
+                        <div class="avatar-circle avatar-green">A</div>
+                        <div class="reviewer-details">
                             <h4>Wasantha Kalupahana</h4>
                             <small data-key="rev2-role">Customer</small>
                         </div>
@@ -198,64 +219,99 @@
     </div>
 </section>
 
-<section id="careers" class="container">
-    <h2 class="section-title reveal" data-key="car-title">Professional Growth & Identity</h2>
-    <div class="card-grid">
-        <div class="card reveal border-primary-thick">
-            <h3 data-key="car-h1">Management Training</h3>
-            <hr>
-            <ul class="details-list">
-                <li><i class="fas fa-briefcase"></i> <span data-key="li1">Permanent Executive Roles</span></li>
-                <li><i class="fas fa-graduation-cap"></i> <span data-key="li2">Full Professional Training</span></li>
-                <li><i class="fas fa-file-invoice-dollar"></i> <span data-key="li3">No Registration/Entry Fees</span></li>
-                <li><i class="fas fa-user-check"></i> <span data-key="li4">Qualifications: O/L or A/L</span></li>
-                <li><i class="fas fa-clock"></i> <span data-key="li5">Age: 18 - 30 Preferred</span></li>
-            </ul>
-            <a href="apply-reg.html" class="btn-apply" data-key="btn-apply-text">Apply for Careers</a>
-        </div> 
+<section id="careers" class="section-white">
+    <div class="container">
+        <h2 class="section-title reveal" data-key="car-title">Professional Growth & Identity</h2>
+        <div class="card-grid">
+            <div class="career-premium-card glass-card reveal">
+                <h3 data-key="car-h1">Management Training</h3>
+                <div class="premium-divider"></div>
+                <ul class="premium-details-list">
+                    <li><i class="fas fa-briefcase"></i> <span data-key="li1">Permanent Executive Roles</span></li>
+                    <li><i class="fas fa-graduation-cap"></i> <span data-key="li2">Full Professional Training</span></li>
+                    <li><i class="fas fa-file-invoice-dollar"></i> <span data-key="li3">No Registration/Entry Fees</span></li>
+                    <li><i class="fas fa-user-check"></i> <span data-key="li4">Qualifications: O/L or A/L</span></li>
+                    <li><i class="fas fa-clock"></i> <span data-key="li5">Age: 18 - 30 Preferred</span></li>
+                </ul>
+                <a href="apply-reg.html" class="btn-premium-apply" data-key="btn-apply-text">Apply for Careers</a>
+            </div> 
 
-        <div class="card reveal border-gray-thick">
-            <h3 data-key="car-h2">Corporate Presence</h3>
-            <hr>
-            <ul class="details-list">
-                <li><i class="fas fa-map-marked-alt"></i> <span><b>Head Office:</b> Anuradhapura</span></li>
-                <li><i class="fas fa-chart-line"></i> <span><b>Vision 2030:</b> 50+ New Branches</span></li>
-                <li><i class="fas fa-id-card"></i> <span><b>Reg:</b> Companies Act No. 7 of 2007</span></li>
-                <li><i class="fas fa-phone-square-alt"></i> <span><b>Hotline:</b> 077 500 9504</span></li>
-                <li><i class="fas fa-envelope-open-text"></i> <span><b>Email:</b> mail.ceyloninternational@gmail.com</span></li>
-            </ul>
+            <div class="career-premium-card glass-card reveal bg-card-subtle">
+                <h3 data-key="car-h2">Corporate Presence</h3>
+                <div class="premium-divider"></div>
+                <ul class="premium-details-list">
+                    <li><i class="fas fa-map-marked-alt"></i> <span><b>Head Office:</b> Anuradhapura</span></li>
+                    <li><i class="fas fa-chart-line"></i> <span><b>Vision 2030:</b> 50+ New Branches</span></li>
+                    <li><i class="fas fa-id-card"></i> <span><b>Reg:</b> Companies Act No. 7 of 2007</span></li>
+                    <li><i class="fas fa-phone-square-alt"></i> <span><b>Hotline:</b> 077 500 9504</span></li>
+                    <li><i class="fas fa-envelope-open-text"></i> <span><b>Email:</b> mail.ceyloninternational@gmail.com</span></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section> 
 
-<footer>
-    <div class="reveal">
-        <div class="footer-logo">
-            <h2>CEYLON INTERNATIONAL</h2>
-            <p>GROUP OF COMPANIES (PVT) LTD</p>
+<footer class="premium-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col reveal">
+                <h3>CEYLON INTERNATIONAL</h3>
+                <p class="footer-about">Registered under the Companies Act No. 07 of 2007, Sri Lanka. Leading the future of multi-sector corporate development.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col reveal">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#divisions">Our Divisions</a></li>
+                    <li><a href="#achievers">Achievers Night</a></li>
+                    <li><a href="#careers">Career Openings</a></li>
+                    <li><a href="#download">Download App</a></li>
+                </ul>
+            </div>
+            <div class="footer-col reveal">
+                <h4>OUR SECTORS</h4>
+                <ul>
+                    <li><a href="edu-reg.html">Ceylon Education</a></li>
+                    <li><a href="smart-reg.html">Smart Home Automation</a></li>
+                    <li><a href="investment-reg.html">Wealth Management</a></li>
+                    <li><a href="autocare-reg.html">Auto Care Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col reveal">
+                <h4>GET IN TOUCH</h4>
+                <ul class="footer-contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> Anuradhapura, Sri Lanka</li>
+                    <li><i class="fas fa-phone-alt"></i> 077 500 9504</li>
+                    <li><i class="fas fa-envelope"></i> mail.ceyloninternational@gmail.com</li>
+                </ul>
+            </div>
         </div>
-        <p class="footer-contacts">Anuradhapura, Sri Lanka | 077 500 9504 | mail.ceyloninternational@gmail.com</p>
-        <div class="footer-copyright">
-            &copy; 2026 CEYLON INTERNATIONAL GROUP. ALL RIGHTS RESERVED. <br>
-            REGISTERED UNDER THE COMPANIES ACT NO. 07 OF 2007, SRI LANKA.
+        <div class="footer-bottom">
+            <p>&copy; 2026 CEYLON INTERNATIONAL GROUP. ALL RIGHTS RESERVED.</p>
         </div>
     </div>
 </footer> 
 
 <script src="assets/js/language.js"></script>
+
 <script>
     function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 100;
+        const reveals = document.querySelectorAll(".reveal");
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveals[i].getBoundingClientRect().top;
+            const elementVisible = 80;
             if (elementTop < windowHeight - elementVisible) {
                 reveals[i].classList.add("active");
             }
         }
     }
     window.addEventListener("scroll", reveal);
+    // Initial call
     reveal(); 
 </script> 
 

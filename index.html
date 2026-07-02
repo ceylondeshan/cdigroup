@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceylon Direxa International | CDI Group</title>
+    <!-- Premium Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Connected to assets/css/style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+    <!-- Premium Header Navigation -->
     <header class="glass-header">
         <div class="logo-container">
             <img src="logo.png" alt="CDI Group Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/50?text=CDI';">
@@ -20,23 +23,30 @@
             </div>
         </div>
         <div class="header-right">
+            <!-- Premium Language Switcher -->
             <div class="lang-switcher">
                 <button id="btn-en" class="active">EN</button>
                 <button id="btn-si">සිං</button>
             </div>
+            <!-- Chat via WhatsApp Button -->
+            <a href="https://wa.me/94706505051" target="_blank" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
             <a href="apply-reg.html" class="nav-btn premium-btn" data-key="nav-join">JOIN OUR TEAM</a>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h2 id="hero-title">Building Careers.<br>Expanding Horizons.</h2>
             <p id="hero-desc">The Fastest Growing Management Training Hub in Sri Lanka</p>
-            <a href="#" class="hero-btn-main" id="hero-btn">GET OFFICIAL APP</a>
+            <a href="assets/app/cdi-app.apk" download class="hero-btn-main" id="hero-btn">GET OFFICIAL APP</a>
         </div>
     </section>
 
+    <!-- Stats Counter Section -->
     <section class="stats-section">
         <div class="stats-grid">
             <div class="stat-card">
@@ -54,6 +64,31 @@
         </div>
     </section>
 
+    <!-- Corporate Presence Section (නිවැරදිව එකතු කරන ලදී) -->
+    <section class="corporate-presence-section">
+        <div class="container">
+            <h2 class="section-title" data-key="corp-title">Our Corporate Presence</h2>
+            <div class="corporate-grid">
+                <div class="corp-card">
+                    <div class="corp-icon"><i class="fas fa-building"></i></div>
+                    <h3 data-key="corp-h1">Registered Head Office</h3>
+                    <p data-key="corp-p1">Operating dynamically from Anuradhapura, leading strategic multi-sector corporate development projects nationwide.</p>
+                </div>
+                <div class="corp-card">
+                    <div class="corp-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-key="corp-h2">Legal Compliance</h3>
+                    <p data-key="corp-p2">Fully integrated and incorporated under the Companies Act No. 07 of 2007, Sri Lanka, ensuring absolute corporate integrity.</p>
+                </div>
+                <div class="corp-card">
+                    <div class="corp-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3 data-key="corp-h3">Branch Network</h3>
+                    <p data-key="corp-p3">Expanding rapidly with a clear blueprint to establish 50+ fully functional administrative centers under Vision 2030.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
     <section class="vision-mission-section">
         <div class="container">
             <div class="vm-grid">
@@ -71,6 +106,7 @@
         </div>
     </section>
 
+    <!-- Business Divisions Section -->
     <section class="divisions-section">
         <div class="container">
             <h2 class="section-title" data-key="div-title">Our Business Divisions</h2>
@@ -115,17 +151,19 @@
         </div>
     </section>
 
+    <!-- Achievers Night Highlight -->
     <section class="achievers-section">
         <div class="achievers-container">
             <div class="achievers-content">
                 <span class="badge" data-key="ach-title">ACHIEVERS NIGHT 2025</span>
                 <h2 data-key="ach-sub">From Vision to Victory</h2>
-                <p id="ach-desc">අපගේ ආයතනික ගමන් මගෙහි සුවිශේෂී සන්ධිස්ථානයක් සනිටුහන් කරමින්, දක්ෂතම කළමනාකරණ තරු ඇගයීමට ලක්කෙරෙන වසරේ അභිමානවත්ම රාත්‍රිය.</p>
+                <p id="ach-desc">අපගේ ආයතනික ගමන් මගෙහි සුවිශේෂී සන්ධිස්ථානයක් සනිටුහන් කරමින්, දක්ෂතම කළමනාකරණ තරු ඇගයීමට ලක්කෙරෙන වසරේ අභිමානවත්ම රාත්‍රිය.</p>
                 <a href="#" class="premium-btn" id="ach-btn">VIEW EVENT GALLERY <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
+    <!-- Careers & Identity Section -->
     <section class="careers-section">
         <div class="container">
             <div class="careers-grid">
@@ -159,6 +197,7 @@
         </div>
     </section>
 
+    <!-- App Download CTA -->
     <section class="app-cta-section">
         <div class="container">
             <div class="app-grid">
@@ -166,21 +205,26 @@
                     <h2 data-key="app-title">Official Mobile App</h2>
                     <p id="app-desc">සියලුම රැකියා අවස්ථාවන් සහ ආයතනික තොරතුරු එසැනින් ලබාගැනීමට දැන්ම අපගේ නිල Android ඇප් එක බාගත කරගන්න.</p>
                     <div class="store-buttons">
-                        <a href="#" class="store-btn"><i class="fab fa-google-play"></i> Google Play</a>
+                        <!-- නිවැරදි සෘජු ඩවුන්ලෝඩ් ලින්ක් එක -->
+                        <a href="assets/app/cdi-app.apk" download class="store-btn">
+                            <i class="fab fa-android"></i> DOWNLOAD APK NOW
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Reviews & Feedback Form Section -->
     <section class="feedback-section">
         <div class="container">
             <h2 class="section-title" data-key="feed-title">What Our Clients Say</h2>
             <div class="feedback-grid">
                 <div class="reviews-container">
+                    <!-- නිවැරදි කරන ලද Review එක (Sujith Devasingha) -->
                     <div class="review-card">
                         <p id="rev1-text">"The Business Development services from CDI Group are highly efficient and reliable. They played a major role in expanding our corporate ventures."</p>
-                        <h5 class="reviewer-name">Lahiru Deshan</h5>
+                        <h5 class="reviewer-name">Sujith Devasingha</h5>
                         <span class="reviewer-role" data-key="rev1-role">Entrepreneur</span>
                     </div>
                     <div class="review-card">
@@ -207,23 +251,17 @@
         </div>
     </section>
 
+    <!-- Premium 4-Column Footer -->
     <footer class="premium-footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3 data-key="foot-brand">CEYLON DIREXA INTERNATIONAL</h3>
                     <p class="footer-about" data-key="foot-about">Registered under the Companies Act No. 07 of 2007, Sri Lanka. Leading the future of multi-sector corporate development as CDI Group.</p>
-                    
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/share/18r8TehXSS/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://youtube.com/@cdivibes?si=HlbLqmtwxM3rKzsG" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@cdi.vibez?_r=1&_t=ZS-97gp9KJip0v" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
+                        <a href="https://www.facebook.com/share/18r8TehXSS/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@cdivibes?si=HlbLqmtwxM3rKzsG" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@cdi.vibez?_r=1&_t=ZS-97gp9KJip0v" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
 
@@ -237,11 +275,13 @@
                     </ul>
                 </div>
 
+                <!-- නිවැරදි කරන ලද Contact Details සහ දුරකථන අංක -->
                 <div class="footer-col">
                     <h4>CONTACT INFO</h4>
                     <p><i class="fas fa-map-marker-alt"></i> Anuradhapura, Sri Lanka</p>
                     <p><i class="fas fa-envelope"></i> info@cdigroup.lk</p>
-                    <p><i class="fas fa-phone-alt"></i> +94 (0) 25 123 4567</p>
+                    <p><i class="fas fa-phone-alt"></i> +94 70 650 5051</p>
+                    <p><i class="fas fa-phone-alt"></i> +94 25 222 4655</p>
                 </div>
 
                 <div class="footer-col">
@@ -258,6 +298,7 @@
         </div>
     </footer>
 
+    <!-- Connected to assets/js/language.js -->
     <script src="assets/js/language.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 // ==========================================================================
-// Multi-Language Core Translation Dictionary
+// Multi-Language Core Translation Dictionary (CDI Group Official)
 // ==========================================================================
 const translations = {
     en: {
@@ -51,12 +51,12 @@ const translations = {
         // Achievers Night
         "ach-title": "ACHIEVERS NIGHT 2025",
         "ach-sub": "From Vision to Victory",
-        "ach-desc": "අපගේ ආයතනික ගමන් මගෙහි සුවිශේෂී සන්ධිස්ථානයක් සනිටුහන් කරමින්, දක්ෂතම කළමනාකරණ තරු ඇගයීමට ලක්කෙරෙන වසරේ අභිමානවත්ම රාත්‍රිය.",
+        "ach-desc": "Celebrating corporate excellence and honoring our top management stars marking a historical milestone in our corporate journey.",
         "ach-btn": 'VIEW EVENT GALLERY <i class="fas fa-arrow-right"></i>',
         
         // App Download
         "app-title": "Official Mobile App",
-        "app-desc": "සියලුම රැකියා අවස්ථාවන් සහ ආයතනික තොරතුරු එසැනින් ලබාගැනීමට දැන්ම අපගේ නිල Android ඇප් එක බාගත කරගන්න.",
+        "app-desc": "Download our official Android application now to get instant access to all career opportunities and corporate updates.",
         
         // Feedback Form
         "feed-title": "What Our Clients Say",
@@ -66,9 +66,9 @@ const translations = {
         "btn-feed-submit": 'SUBMIT FEEDBACK <i class="fas fa-paper-plane"></i>',
         
         // Reviews
-        "rev1-text": '"Ceylon International Group එකේ Business Development සේවාව ඉතාමත් ඉක්මන් වගේම විශ්වාසදායකයි. මගේ ව්‍යාපාරය සාර්ථක කරගන්න ඔවුන් ලොකු උදව්වක් වුණා."',
+        "rev1-text": '"The Business Development services from CDI Group are highly efficient and reliable. They played a major role in expanding our corporate ventures."',
         "rev1-role": "Entrepreneur",
-        "rev2-text": '"Offers නම් ඉතින් Ceylon තමයි, ඇත්තටම මාර friendly කාර්‍ය මණ්ඩලයක්.සුභ පැතුම්."',
+        "rev2-text": '"Offers inside the platform are incredible, truly a very friendly staff. Highly recommended!"',
         "rev2-role": "Customer",
         
         // Careers Section
@@ -80,7 +80,11 @@ const translations = {
         "li3": "No Registration/Entry Fees",
         "li4": "Qualifications: O/L or A/L",
         "li5": "Age: 18 - 30 Preferred",
-        "btn-apply-text": "Apply for Careers"
+        "btn-apply-text": "Apply for Careers",
+
+        // Footer Dynamic Content
+        "foot-brand": "CEYLON DIREXA INTERNATIONAL",
+        "foot-about": "Registered under the Companies Act No. 07 of 2007, Sri Lanka. Leading the future of multi-sector corporate development as CDI Group."
     },
     si: {
         // Navigation & Headers
@@ -146,7 +150,7 @@ const translations = {
         "btn-feed-submit": 'අදහස් ඉදිරිපත් කරන්න <i class="fas fa-paper-plane"></i>',
         
         // Reviews
-        "rev1-text": '"Ceylon International Group එකේ Business Development සේවාව ඉතාමත් ඉක්මන් වගේම විශ්වාසදායකයි. මගේ ව්‍යාපාරය සාර්ථක කරගන්න ඔවුන් ලොකු උදව්වක් වුණා."',
+        "rev1-text": '"CDI Group (Ceylon Direxa International) එකේ Business Development සේවාව ඉතාමත් ඉක්මන් වගේම විශ්වාසදායකයි. මගේ ව්‍යාපාරය සාර්ථක කරගන්න ඔවුන් ලොකු උදව්වක් වුණා."',
         "rev1-role": "ව්‍යවසායක",
         "rev2-text": '"Offers නම් ඉතින් Ceylon තමයි, ඇත්තටම මාර friendly කාර්‍ය මණ්ඩලයක්.සුභ පැතුම්."',
         "rev2-role": "පාරිභෝගිකයා",
@@ -160,7 +164,11 @@ const translations = {
         "li3": "ලියාපදිංචි හෝ ඇතුළත් වීමේ ගාස්තු නොමැත",
         "li4": "සුදුසුකම්: සාමාන්‍ය පෙළ හෝ උසස් පෙළ",
         "li5": "වයස: අවුරුදු 18 - 30 අතර විශේෂයි",
-        "btn-apply-text": "රැකියා සඳහා අයදුම් කරන්න"
+        "btn-apply-text": "රැකියා සඳහා අයදුම් කරන්න",
+
+        // Footer Dynamic Content
+        "foot-brand": "සිලෝන් ඩිරෙක්සා ඉන්ටර්නැෂනල්",
+        "foot-about": "2007 අංක 07 දරන සමාගම් පනත යටතේ ශ්‍රී ලංකාවේ ලියාපදිංචි කර ඇත. CDI Group ලෙස බහු-අංශ ආයතනික සංවර්ධනයේ අනාගතය මෙහෙයවනු ලබයි."
     }
 };
 
@@ -171,12 +179,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnEn = document.getElementById("btn-en");
     const btnSi = document.getElementById("btn-si");
     
-    // Function to apply language changes safely to the DOM
     function setLanguage(lang) {
-        // Save user preference to localStorage
         localStorage.setItem("selectedLang", lang);
         
-        // Toggle Active Button Styles
         if (lang === "si") {
             btnSi.classList.add("active");
             btnEn.classList.remove("active");
@@ -185,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
             btnSi.classList.remove("active");
         }
         
-        // 1. Update Elements with specific IDs (Handles HTML Markup inside string)
+        // 1. Update Elements with specific IDs
         const idElements = ["hero-title", "hero-desc", "hero-btn", "vision-text", "mission-text", "div1-h", "div1-p", "div2-h", "div2-p", "div3-h", "div3-p", "div4-h", "div4-p", "div5-h", "div5-p", "div6-h", "div6-p", "ach-desc", "ach-btn", "app-desc", "rev1-text", "rev2-text", "stat-1", "stat-2", "stat-3"];
         
         idElements.forEach(id => {
@@ -195,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
         
-        // 2. Update Elements with data-key attributes (Prevents layout shift)
+        // 2. Update Elements with data-key attributes
         const dataElements = document.querySelectorAll("[data-key]");
         dataElements.forEach(el => {
             const key = el.getAttribute("data-key");
@@ -205,11 +210,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Event Listeners for switching buttons
-    btnEn.addEventListener("click", () => setLanguage("en"));
-    btnSi.addEventListener("click", () => setLanguage("si"));
+    if(btnEn && btnSi) {
+        btnEn.addEventListener("click", () => setLanguage("en"));
+        btnSi.addEventListener("click", () => setLanguage("si"));
+    }
 
-    // Check localStorage or default to English on startup
     const savedLang = localStorage.getItem("selectedLang") || "en";
     setLanguage(savedLang);
 });

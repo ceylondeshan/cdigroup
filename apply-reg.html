@@ -91,15 +91,16 @@
         }
         .form-group.textarea-group label {
             top: 25px;
+            transform: none;
         }
-        /* Floating Animation */
+        /* Premium Floating Label Animation Trigger */
         .form-group input:focus ~ label,
-        .form-group input:valid ~ label,
+        .form-group input:not(:placeholder-shown) ~ label,
         .form-group select:focus ~ label,
-        .form-group select:not([value=""]):valid ~ label,
+        .form-group select:valid ~ label,
         .form-group textarea:focus ~ label,
         .form-group textarea:not(:placeholder-shown) ~ label {
-            top: 10px;
+            top: 6px;
             font-size: 10px;
             color: #d4af37;
             font-weight: 600;
@@ -165,13 +166,13 @@
                 <p data-key="form-subtitle">Ceylon Direxa International | CDI Group Careers</p>
             </div>
 
-            <!-- Registration Form -->
+            <!-- Registration Form Structure -->
             <form id="careerForm">
                 
-                <!-- Full Name (Ceylon Direxa International Animation) -->
+                <!-- Full Name -->
                 <div class="form-group">
                     <input type="text" id="fullName" placeholder=" " required>
-                    <label data-key="lbl-form-name">Ceylon Direxa International - Full Name (සම්පූර්ණ නම)</label>
+                    <label data-key="lbl-form-name">Full Name (සම්පූර්ණ නම)</label>
                 </div>
 
                 <div class="form-group-row">
@@ -200,9 +201,9 @@
                     </div>
                 </div>
 
-                <!-- Education Qualification -->
+                <!-- Education Qualification Dropdown -->
                 <div class="form-group">
-                    <select id="education" required onchange="this.setAttribute('value', this.value);">
+                    <select id="education" required>
                         <option value="" disabled selected hidden></option>
                         <option value="GCE O/L">GCE O/L</option>
                         <option value="GCE A/L">GCE A/L</option>
@@ -212,9 +213,9 @@
                     <label data-key="lbl-form-edu">Highest Education Qualification (අධ්‍යාපන සුදුසුකම්)</label>
                 </div>
 
-                <!-- Preferred Division -->
+                <!-- Preferred Division Dropdown -->
                 <div class="form-group">
-                    <select id="division" required onchange="this.setAttribute('value', this.value);">
+                    <select id="division" required>
                         <option value="" disabled selected hidden></option>
                         <option value="Ceylon Education">Ceylon Education</option>
                         <option value="Ceylon Smart home">Ceylon Smart home</option>
@@ -225,13 +226,13 @@
                     <label data-key="lbl-form-div">Preferred Business Division (කැමති අංශය)</label>
                 </div>
 
-                <!-- Short Message -->
+                <!-- Short Message Textarea -->
                 <div class="form-group textarea-group">
-                    <textarea id="message" rows="3" placeholder=" "></textarea>
+                    <textarea id="message" rows="3" placeholder=" " required></textarea>
                     <label data-key="lbl-form-msg">Why do you want to join us? (සම්බන්ධ වීමට අදහස් කළේ ඇයි?)</label>
                 </div>
 
-                <!-- Submit Button -->
+                <!-- Premium Submit Button -->
                 <button type="submit" class="submit-btn-premium" id="submitBtn">
                     SUBMIT APPLICATION <i class="fas fa-paper-plane"></i>
                 </button>
@@ -254,19 +255,19 @@
             submitBtn.innerHTML = 'SUBMITTING... <i class="fas fa-spinner fa-spin"></i>';
             submitBtn.disabled = true;
 
-            // Google Form එකේ සැබෑ Submit URL එක (ලින්ක් එකෙන් ගත්තු එක)
-            const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSc9pSg1U9e2L249p6w7Vv_g6O8p5oVn2lR9p8e2_9z_w/formResponse";
+            // ඔයාගේ සැබෑ Google Form එකේ backend Response ලින්ක් එක
+            const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSdDE1NfaN4uiJVFhFAQ6WByc4K2dQrm2-PPzBhaTD6CxNf46Q/formResponse";
 
-            // ඔයාගේ Google Form එකෙන් මම වෙන් කරලා ගත්තු නිවැරදිම Entry IDs ටික මෙන්න
+            // ඔයා එවපු ලින්ක් එකෙන් වෙන් කරගත්තු 100%ක් නිවැරදි IDs සහ අතුරුදන්ව තිබූ IDs සියල්ලම මෙන්න මචන්
             const formData = new FormData();
-            formData.append('entry.2096735232', document.getElementById('fullName').value);
-            formData.append('entry.1205364890', document.getElementById('phone').value);
-            formData.append('entry.1444122119', document.getElementById('whatsapp').value);
-            formData.append('entry.1743658900', document.getElementById('age').value);
-            formData.append('entry.329845712', document.getElementById('district').value);
-            formData.append('entry.854125963', document.getElementById('education').value);
-            formData.append('entry.1952364711', document.getElementById('division').value);
-            formData.append('entry.652147893', document.getElementById('message').value);
+            formData.append('entry.2105528632', document.getElementById('fullName').value);
+            formData.append('entry.899543731', document.getElementById('phone').value);
+            formData.append('entry.989116378', document.getElementById('whatsapp').value);
+            formData.append('entry.1589322204', document.getElementById('age').value);
+            formData.append('entry.188270919', document.getElementById('district').value);
+            formData.append('entry.1436442654', document.getElementById('education').value);
+            formData.append('entry.1444158482', document.getElementById('division').value);
+            formData.append('entry.1983637151', document.getElementById('message').value);
 
             fetch(formURL, {
                 method: 'POST',

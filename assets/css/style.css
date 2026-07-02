@@ -34,9 +34,7 @@ body {
     padding: 0 20px;
 }
 
-/* ==========================================================================
-   Premium Navigation Header
-   ========================================================================== */
+/* Premium Navigation Header */
 .glass-header {
     position: fixed;
     top: 0;
@@ -130,9 +128,7 @@ body {
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
-/* ==========================================================================
-   Hero Section
-   ========================================================================== */
+/* Hero Section */
 .hero-section {
     position: relative;
     height: 100vh;
@@ -192,9 +188,7 @@ body {
     box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
 }
 
-/* ==========================================================================
-   Stats Counter Section
-   ========================================================================== */
+/* Stats Counter Section */
 .stats-section {
     background: rgba(255, 255, 255, 0.01);
     border-top: 1px solid var(--glass-border);
@@ -226,9 +220,7 @@ body {
     color: var(--text-muted);
 }
 
-/* ==========================================================================
-   Vision & Mission Section
-   ========================================================================== */
+/* Vision & Mission Section */
 .vision-mission-section {
     padding: 100px 0;
 }
@@ -270,9 +262,7 @@ body {
     font-style: italic;
 }
 
-/* ==========================================================================
-   Business Divisions Section
-   ========================================================================== */
+/* Business Divisions Section */
 .divisions-section {
     padding: 60px 0 100px 0;
 }
@@ -336,9 +326,7 @@ body {
     color: var(--gold-hover);
 }
 
-/* ==========================================================================
-   Achievers Night Highlight
-   ========================================================================== */
+/* Achievers Night Highlight */
 .achievers-section {
     padding: 100px 0;
     background: linear-gradient(rgba(11,15,25,0.85), rgba(11,15,25,0.85)), 
@@ -375,9 +363,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* ==========================================================================
-   Careers Section
-   ========================================================================== */
+/* Careers Section */
 .careers-section {
     padding: 100px 0;
 }
@@ -460,9 +446,7 @@ body {
     border: 1px solid var(--glass-border);
 }
 
-/* ==========================================================================
-   App Download CTA
-   ========================================================================== */
+/* App Download CTA */
 .app-cta-section {
     padding: 60px 0;
     background: rgba(255, 255, 255, 0.02);
@@ -504,9 +488,7 @@ body {
     border-color: var(--primary-gold);
 }
 
-/* ==========================================================================
-   Reviews & Feedback Form Section
-   ========================================================================== */
+/* Reviews & Feedback Form Section */
 .feedback-section {
     padding: 100px 0;
 }
@@ -605,9 +587,7 @@ body {
     color: #000;
 }
 
-/* ==========================================================================
-   Premium 4-Column Footer
-   ========================================================================== */
+/* Premium 4-Column Footer */
 .premium-footer {
     background: #060911;
     border-top: 1px solid var(--glass-border);
@@ -705,9 +685,7 @@ body {
     color: var(--text-muted);
 }
 
-/* ==========================================================================
-   Responsive Media Queries (Mobile Optimization)
-   ========================================================================== */
+/* Responsive Media Queries */
 @media (max-width: 992px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;

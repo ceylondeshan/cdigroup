@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Bank Details | Ceylon Direxa International</title>
+    <!-- Premium Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #0d0f12;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 15px;
+        }
+        .pay-card {
+            background: rgba(22, 27, 34, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 20px;
+            padding: 30px 22px;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.08);
+            text-align: center;
+        }
+        .pay-header {
+            margin-bottom: 25px;
+        }
+        .pay-header .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #d4af37;
+            border-radius: 50%;
+            margin-bottom: 12px;
+            color: #d4af37;
+            font-size: 22px;
+        }
+        .pay-header h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #d4af37;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+        .pay-header p {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 3px;
+            font-weight: 500;
+        }
+        
+        .bank-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 18px 16px;
+            margin-bottom: 18px;
+            text-align: left;
+            position: relative;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .bank-box:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+        .bank-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 10px;
+        }
+        .bank-name-tag {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .bank-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        /* Custom Official Bank Branding Colors */
+        .combank-icon { background: rgba(0, 84, 166, 0.25); color: #0072ce; border: 1px solid rgba(0, 114, 206, 0.4); }
+        .boc-icon { background: rgba(230, 160, 0, 0.25); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); }
+        .peoples-icon { background: rgba(220, 38, 38, 0.25); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+
+        .info-row {
+            margin-bottom: 8px;
+        }
+        .info-label {
+            font-size: 10px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            display: block;
+            font-weight: 600;
+        }
+        .info-value {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+        .acc-number-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-top: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .acc-number-text {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+            font-family: monospace;
+        }
+        .copy-btn {
+            background: linear-gradient(135deg, #d4af37 0%, #aa8416 100%);
+            color: #000000;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .copy-btn:hover {
+            opacity: 0.9;
+            transform: scale(1.04);
+        }
+
+        .notice-box {
+            background: rgba(212, 175, 55, 0.08);
+            border-left: 3px solid #d4af37;
+            padding: 12px 14px;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 11px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .notice-box i {
+            color: #d4af37;
+            margin-right: 6px;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background: #25d366;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+        }
+        .whatsapp-btn:hover {
+            background: #20ba5a;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+            transform: translateY(-1px);
+        }
+        
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #d4af37;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 1000;
+        }
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pay-card">
+        
+        <div class="pay-header">
+            <div class="logo-badge">
+                <i class="fas fa-university"></i>
+            </div>
+            <h2>Official Bank Details</h2>
+            <p>Ceylon Direxa International | CDI Group</p>
+        </div>
+
+        <!-- 1. Commercial Bank -->
+        <div class="bank-box">
+            <div class="bank-title">
+                <div class="bank-name-tag">
+                    <div class="bank-icon combank-icon"><i class="fas fa-building-columns"></i></div>
+                    <span>Commercial Bank</span>
+                </div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">Account Name</span>
+                <span class="info-value">LD Wijerathne</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Branch</span>
+                <span class="info-value">Dambulla Branch</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Account Number</span>
+                <div class="acc-number-row">
+                    <span class="acc-number-text" id="acc1">8005447332</span>
+                    <button class="copy-btn" onclick="copyToClipboard('acc1')"><i class="fas fa-copy"></i> COPY</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Bank Of Ceylon -->
+        <div class="bank-box">
+            <div class="bank-title">
+                <div class="bank-name-tag">
+                    <div class="bank-icon boc-icon"><i class="fas fa-university"></i></div>
+                    <span>Bank Of Ceylon (BOC)</span>
+                </div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">Account Name</span>
+                <span class="info-value">LD Wijerathne</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Branch</span>
+                <span class="info-value">Medawachchiya Branch</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Account Number</span>
+                <div class="acc-number-row">
+                    <span class="acc-number-text" id="acc2">92489030</span>
+                    <button class="copy-btn" onclick="copyToClipboard('acc2')"><i class="fas fa-copy"></i> COPY</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. People's Bank -->
+        <div class="bank-box">
+            <div class="bank-title">
+                <div class="bank-name-tag">
+                    <div class="bank-icon peoples-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <span>People's Bank</span>
+                </div>
+            </div>
+            
+            <div class="info-row">
+                <span class="info-label">Account Name</span>
+                <span class="info-value">LD Wijerathne</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Branch</span>
+                <span class="info-value">Matale Branch</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Account Number</span>
+                <div class="acc-number-row">
+                    <span class="acc-number-text" id="acc3">002200140053248</span>
+                    <button class="copy-btn" onclick="copyToClipboard('acc3')"><i class="fas fa-copy"></i> COPY</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notice Box -->
+        <div class="notice-box">
+            <i class="fas fa-info-circle"></i> 
+            මුදල් තැන්පත් කළ පසු කරුණාකර Bank Slip / Receipt එක පහත WhatsApp අංකයට යොමු කරන්න.
+        </div>
+
+        <!-- Direct WhatsApp Slip Upload Button -->
+        <a href="https://wa.me/94775009504?text=Hi%20CDI,%20I%20have%20completed%20the%20payment.%20Here%20is%20my%20payment%20slip." target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> SEND PAYMENT SLIP VIA WHATSAPP
+        </a>
+
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">Account Number Copied!</div>
+
+    <script>
+        function copyToClipboard(elementId) {
+            var textToCopy = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                showToast("Copied: " + textToCopy);
+            }, function(err) {
+                console.error("Could not copy text: ", err);
+            });
+        }
+
+        function showToast(message) {
+            var toast = document.getElementById("toast");
+            toast.innerText = message;
+            toast.classList.add("show");
+            setTimeout(function() {
+                toast.classList.remove("show");
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
